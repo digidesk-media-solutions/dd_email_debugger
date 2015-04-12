@@ -51,11 +51,17 @@
 
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
-                        <button type="submit" class="btn btn-primary">E-Mail senden</button>
-                        <button type="submit" class="btn btn-default">Vorschau anzeigen</button>
+                        <input type="submit" class="btn btn-primary" name="editval[send]" value="E-Mail senden"/>
+                        <input type="submit" class="btn btn-default" name="editval[html_preview]" value="HTML-Vorschau anzeigen"/>
+                        <input type="submit" class="btn btn-default" name="editval[plain_preview]" value="Text-Vorschau anzeigen"/>
                     </div>
                 </div>
             </form>
+
+            [{if $aEdit.html_preview || $aEdit.plain_preview}]
+                <hr/>
+                <iframe src="[{$oViewConf->getSelfLink()}]&cl=dd_email_debugger&fnc=sendMail&editval[template]=[{$aEdit.template}]&editval[preview]=[{if $aEdit.html_preview}]html[{else}]plain[{/if}]&editval[iframe]=1" frameborder="0" style="width:100%;height:500px;" class="well well-sm"></iframe>
+            [{/if}]
 
         </div> <!-- /container -->
 

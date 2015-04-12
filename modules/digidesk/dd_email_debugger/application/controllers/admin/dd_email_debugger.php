@@ -113,10 +113,27 @@ class dd_email_debugger extends oxAdminView
 
         if( $blPrepareSuccessful )
         {
-            $sFullName = $oUser->oxuser__oxfname->getRawValue() . " " . $oUser->oxuser__oxlname->getRawValue();
-            $oEmail->setRecipient( $aPost[ 'receiver' ], $sFullName );
+            if( isset( $aPost[ 'preview' ] ) && isset( $aPost[ 'iframe' ] ) )
+            {
+                if( $aPost[ 'preview' ] == 'html' )
+                {
+                    echo $oEmail->getBody();
+                }
+                else
+                {
+                    echo '<pre>';
+                    echo $oEmail->getAltBody();
+                    echo '</pre>';
+                }
+                exit;
+            }
+            else
+            {
+                $sFullName = $oUser->oxuser__oxfname->getRawValue() . " " . $oUser->oxuser__oxlname->getRawValue();
+                $oEmail->setRecipient( $aPost[ 'receiver' ], $sFullName );
 
-            $oEmail->send();
+                $oEmail->send();
+            }
         }
     }
 }

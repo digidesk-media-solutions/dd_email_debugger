@@ -170,7 +170,7 @@ class dd_email_debugger_oxemail extends dd_email_debugger_oxemail_parent
 
             //Sets subject to email
             // #586A
-            if ($oSmarty->template_exists($oConfig->getTemplatePath( $this->_sOrderOwnerSubjectTemplate), false)) {
+            if ($oSmarty->template_exists($oConfig->getTemplatePath( $this->_sOrderOwnerSubjectTemplate, false)) ) {
                 $sSubject = $oSmarty->fetch($oConfig->getTemplatePath( $this->_sOrderOwnerSubjectTemplate, false ) );
             } else {
                 $sSubject = $oShop->oxshops__oxordersubject->getRawValue() . " (#" . $oOrder->oxorder__oxordernr->value . ")";
