@@ -28,7 +28,7 @@ $aModule = array(
         'de' => 'Dieses Modul ermöglicht das einfache Debugging von E-Mails im OXID eShop.',
     ),
     'thumbnail'   => 'module.png',
-    'version'     => '1.0.0',
+    'version'     => '1.0.1',
     'author'      => 'digidesk - media solutions',
     'url'         => 'http://www.digidesk.de/',
     'email'       => 'support@digidesk.de',
