@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<OX>
+    <OXMENU id="Digidesk">
+        <MAINMENU id="DD_MENU_EMAIL_DEBUGGER">
+            <SUBMENU id="DD_MENU_EMAIL_DEBUGGER_DEBUG" cl="dd_email_debugger"></SUBMENU>
+        </MAINMENU>
+    </OXMENU>
+</OX>
