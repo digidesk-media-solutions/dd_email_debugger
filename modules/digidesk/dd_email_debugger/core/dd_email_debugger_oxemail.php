@@ -631,7 +631,6 @@ class dd_email_debugger_oxemail extends dd_email_debugger_oxemail_parent
         // create messages
         $oSmarty = $this->_getSmarty();
 
-        $oConfig->setAdminMode( false );
         $this->setViewData( "product", $oProduct );
         $this->setUser($oUser);
 
@@ -640,6 +639,8 @@ class dd_email_debugger_oxemail extends dd_email_debugger_oxemail_parent
         // Process view data array through oxOutput processor
         $this->_processViewArray();
 
+		$oConfig->setAdminMode( false );
+		
         $this->setBody($oSmarty->fetch($oConfig->getTemplatePath($this->_sSuggestTemplate,false)));
         $this->setAltBody($oSmarty->fetch($oConfig->getTemplatePath($this->_sSuggestTemplatePlain,false)));
         $this->setSubject( "Produktempfehlung" );

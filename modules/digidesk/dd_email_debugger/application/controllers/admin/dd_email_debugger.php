@@ -113,19 +113,22 @@ class dd_email_debugger extends oxAdminView
 
         if( $blPrepareSuccessful )
         {
-            if( isset( $aPost[ 'preview' ] ) && isset( $aPost[ 'iframe' ] ) )
+            if( isset( $aPost[ 'html_preview' ] ) || isset( $aPost[ 'plain_preview' ] ) || isset( $aPost[ 'preview' ] ) )
             {
-                if( $aPost[ 'preview' ] == 'html' )
+                if( isset( $aPost[ 'iframe' ] ) )
                 {
-                    echo $oEmail->getBody();
+                    if( $aPost[ 'preview' ] == 'html' )
+                    {
+                        echo $oEmail->getBody();
+                    }
+                    else
+                    {
+                        echo '<pre>';
+                        echo $oEmail->getAltBody();
+                        echo '</pre>';
+                    }
+                    exit;
                 }
-                else
-                {
-                    echo '<pre>';
-                    echo $oEmail->getAltBody();
-                    echo '</pre>';
-                }
-                exit;
             }
             else
             {
