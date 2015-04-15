@@ -8,7 +8,7 @@
 *Author:* [digidesk - media solutions](http://www.digidesk.de/)  
 *E-Mail:* [support@digidesk.de](mailto:support@digidesk.de)  
 *Erstellt:* 11.04.2015  
-*Version:* 1.0.1
+*Version:* 1.0.2
 
 ---
 
@@ -19,13 +19,12 @@ Dieses Modul ermöglicht das einfache Debugging von E-Mails im OXID eShop.
 1. Voraussetzungen
 2. Vorbereitungen
 3. Installation
-    - ab OXID 4.6.x
+    - ab OXID 4.8.1
 4. Einstellungen
 
 
 ## 1. Voraussetzungen
-1. Lauffähige OXID eShop-Installation (mind. 4.6.x oder höher)
-2. ionCube Loader (mind. v4.4.0) muss auf Ihrem Server installiert sein.
+1. Lauffähige OXID eShop-Installation (mind. 4.8.x oder höher)
 
 
 ## 2. Vorbereitungen
@@ -45,7 +44,7 @@ Beachten Sie hierbei auch, dass Dateien aus dem Ordner **"copy_this/"** direkt �
 
 ## 3. Installation
 
-### 3.1 Installation ab OXID 4.6.x
+### 3.1 Installation ab OXID 4.8.x
 1. Melden Sie sich in OXID eShop admin ein (i.d.R.: *http://www.ihre-shop-url.de/admin*)
 2. Klicken Sie links in der Navigation auf **"Erweiterungen" → "Module"**
 3. Aktivieren Sie das Modul **"digidesk - E-Mail Template Debugger"**
