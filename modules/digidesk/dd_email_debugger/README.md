@@ -8,7 +8,7 @@
 *Author:* [digidesk - media solutions](http://www.digidesk.de/)  
 *E-Mail:* [support@digidesk.de](mailto:support@digidesk.de)  
 *Erstellt:* 11.04.2015  
-*Version:* 1.0.1
+*Version:* 1.0.2
 
 ---
 
