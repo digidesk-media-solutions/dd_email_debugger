@@ -5,7 +5,7 @@
 ---
 
 *Modulname:* dd_email_debugger  
-*Author:* [digidesk - media solutions](http://www.digidesk.de/) - Kai Neuwerth
+*Author:* [digidesk - media solutions](http://www.digidesk.de/)
 *E-Mail:* [support@digidesk.de](mailto:support@digidesk.de)  
 *Erstellt:* 21.04.2015
 *Version:* 1.0.2
