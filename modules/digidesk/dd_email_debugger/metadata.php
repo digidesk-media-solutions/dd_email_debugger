@@ -42,8 +42,4 @@ $aModule = array(
     'templates' => array(
         'dd_email_debugger.tpl' => 'digidesk/dd_email_debugger/application/views/admin/tpl/dd_email_debugger.tpl',
     ),
-    /*'events' => array(
-        'onActivate'   => 'dd_email_debugger_events::onActivate',
-        'onDeactivate' => 'dd_email_debugger_events::onDeactivate'
-    ),*/
 );
