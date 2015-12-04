@@ -67,6 +67,5 @@
 
         <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-        <script src="[{$oViewConf->getModuleUrl('dd_email_debugger','out/src/js/scripts.js')}]"></script>
     </body>
 </html>
