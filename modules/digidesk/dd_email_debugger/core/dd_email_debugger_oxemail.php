@@ -39,6 +39,7 @@ class dd_email_debugger_oxemail extends dd_email_debugger_oxemail_parent
             /** @var oxBasket $oBasket */
             /** @var oxOrderArticle $oOrderArticle */
             $oBasket = oxNew( 'oxBasket' );
+            $oBasket->setStockCheckMode(false);
             foreach( $oOrder->getOrderArticles() as $oOrderArticle )
             {
                 $sProductID = $oOrderArticle->getProductId();
@@ -124,6 +125,7 @@ class dd_email_debugger_oxemail extends dd_email_debugger_oxemail_parent
             /** @var oxBasket $oBasket */
             /** @var oxOrderArticle $oOrderArticle */
             $oBasket = oxNew( 'oxBasket' );
+            $oBasket->setStockCheckMode(false);
             foreach( $oOrder->getOrderArticles() as $oOrderArticle )
             {
                 $sProductID = $oOrderArticle->getProductId();
